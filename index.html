@@ -164,7 +164,7 @@
           // User is signed out.
           // [START_EXCLUDE]
           document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
-          document.getElementById('quickstart-sign-in').textContent = 'Log in with Facebook';
+          document.getElementById('quickstart-sign-in').textContent = 'Accedi tramite FB';
           document.getElementById('quickstart-account-details').textContent = 'null';
           document.getElementById('quickstart-oauthtoken').textContent = 'null';
           // [END_EXCLUDE]
@@ -212,13 +212,7 @@
           <div class="demo-avatar-dropdown">
             <span>hello@example.com</span>
             <div class="mdl-layout-spacer"></div>
-            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-              <i class="material-icons" role="presentation">arrow_drop_down</i>
-              <span class="visuallyhidden">Accounts</span>
-            </button>
-            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-              <li disabled class="mdl-menu__item" id="quickstart-sign-in"><i class="material-icons">account_circle</i>Accedi...</li>
-            </ul>
+            <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in">Accedi tramite FB</button>
           </div>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
