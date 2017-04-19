@@ -157,6 +157,7 @@
           var providerData = user.providerData;
           // [START_EXCLUDE]
           document.getElementById('quickstart-sign-in-name').textContent = displayName;
+          document.getElementById('quickstart-sign-in-image').src = photoURL;
           document.getElementById('quickstart-sign-in').textContent = 'Log out';
           //document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
           // [END_EXCLUDE]
@@ -164,6 +165,7 @@
           // User is signed out.
           // [START_EXCLUDE]
           document.getElementById('quickstart-sign-in-name').textContent = 'Nessun accesso';
+          document.getElementById('quickstart-sign-in-image').src = '';
           document.getElementById('quickstart-sign-in').textContent = 'Accedi tramite FB';
           //document.getElementById('quickstart-account-details').textContent = 'null';
           //document.getElementById('quickstart-oauthtoken').textContent = 'null';
@@ -208,7 +210,7 @@
       </header>
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="demo-drawer-header">
-          <img src="images/user.jpg" >
+          <img src="" class="demo-avatar" id="quickstart-sign-in-image">
             <span id="quickstart-sign-in-name"></span>
             <p>
             <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in">Accedi tramite FB</button>
