@@ -156,17 +156,17 @@
           var uid = user.uid;
           var providerData = user.providerData;
           // [START_EXCLUDE]
-          document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
+          //document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
           document.getElementById('quickstart-sign-in').textContent = 'Log out';
-          document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
+          //document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
           // [END_EXCLUDE]
         } else {
           // User is signed out.
           // [START_EXCLUDE]
-          document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
+          //document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
           document.getElementById('quickstart-sign-in').textContent = 'Accedi tramite FB';
-          document.getElementById('quickstart-account-details').textContent = 'null';
-          document.getElementById('quickstart-oauthtoken').textContent = 'null';
+          //document.getElementById('quickstart-account-details').textContent = 'null';
+          //document.getElementById('quickstart-oauthtoken').textContent = 'null';
           // [END_EXCLUDE]
         }
         // [START_EXCLUDE]
@@ -211,9 +211,9 @@
           <img src="images/user.jpg" class="demo-avatar">
           <div class="demo-avatar-dropdown">
             <span>hello@example.com</span>
-            <div class="mdl-layout-spacer"></div>
+            <span>
             <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in">Accedi tramite FB</button>
-          </div>
+        </span>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
