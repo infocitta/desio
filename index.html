@@ -87,7 +87,7 @@
         var provider = new firebase.auth.FacebookAuthProvider();
         // [END createprovider]
         // [START addscopes]
-        provider.addScope('user_likes');
+        //provider.addScope('user_likes');
         // [END addscopes]
         // [START signin]
         firebase.auth().signInWithRedirect(provider);
@@ -156,14 +156,14 @@
           var uid = user.uid;
           var providerData = user.providerData;
           // [START_EXCLUDE]
-          document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
+          document.getElementById('quickstart-sign-in-name').textContent = displayName;
           document.getElementById('quickstart-sign-in').textContent = 'Log out';
           //document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
           // [END_EXCLUDE]
         } else {
           // User is signed out.
           // [START_EXCLUDE]
-          document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
+          document.getElementById('quickstart-sign-in-name').textContent = 'Nessun accesso';
           document.getElementById('quickstart-sign-in').textContent = 'Accedi tramite FB';
           //document.getElementById('quickstart-account-details').textContent = 'null';
           //document.getElementById('quickstart-oauthtoken').textContent = 'null';
@@ -208,8 +208,8 @@
       </header>
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="demo-drawer-header">
-          <img src="images/user.jpg" class="demo-avatar">
-            <span id="quickstart-sign-in-status"></span>
+          <img src="images/user.jpg" >
+            <span id="quickstart-sign-in-name"></span>
             <p>
             <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in">Accedi tramite FB</button>
         </p>
