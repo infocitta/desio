@@ -126,8 +126,9 @@ limitations under the License.
           var isAnonymous = user.isAnonymous;
           var uid = user.uid;
           var providerData = user.providerData;
+          var accessToken=user.accessToken;
           // [START_EXCLUDE]
-          document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
+          document.getElementById('quickstart-sign-in-status').textContent = accessToken;
           document.getElementById('quickstart-sign-in').textContent = 'Log out';
           document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
           // [END_EXCLUDE]
